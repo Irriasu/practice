@@ -1,10 +1,11 @@
-function sum(a, b) {
-    return a + b;
-  }
-  
-  const num1 = 5;
-  const num2 = 7;
-  
-  const result = sum(num1, num2);
-  
-  console.log(`The sum of ${num1} and ${num2} is ${result}`);
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
