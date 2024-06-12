@@ -17,5 +17,10 @@ pipeline {
         bat 'npm run build'
       }
     }
+    stage("Build Image"){
+      steps{
+        bat 'docker build -t microservice:1.0 .'
+      }
+    }
   }
 }
