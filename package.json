@@ -4,11 +4,15 @@
   "description": "",
   "main": "microservice.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "echo 'running build'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node": "^22.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0"
   }
 }
